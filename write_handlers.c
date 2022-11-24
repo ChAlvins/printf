@@ -212,7 +212,7 @@ int write_pointer(char buffer[], int ind, int length,
 			/*buffer[--ind] = 'x';*/
 			buffer[--ind] = '0';
 			if (extra_c)
-				buffer[--ind] == extra_c;
+				/*buffer[--ind] == extra_c;*/
 			return (write(1, &buffer[ind], length) + write(1, &buffer[3], i - 3));
 		}
 				else if (!(flags & F_MINUS) && padd == ' ')
